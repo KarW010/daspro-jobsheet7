@@ -11,6 +11,10 @@ public class DoWhileLeaveEntitlement09 {
         do {
             System.out.print("Do you want to take a leave (y/n)? ");
             confirmation = input.next();
+            if (confirmation.equalsIgnoreCase("t")) {
+                System.out.println("Program stopped by user.");
+                break;
+            }
             if (confirmation.equalsIgnoreCase("y")) {
                 while (true) {
                     System.out.print("How many day(s)? ");
